@@ -1,0 +1,59 @@
+.partners {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 80px; 
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+}
+
+.partners__title {
+    @include title;
+    margin-bottom: 35px;
+
+    & span {
+        color: #9D55B8;
+    }
+
+    @media (min-width: $tablet) {
+        margin-bottom: 45px; 
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 85px;
+    }
+}
+
+.partners__logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+
+    & img {
+        width: 100px;
+        height: auto;
+    }
+
+    @media (min-width: $tablet) {
+        & img {
+            flex-wrap: nowrap;
+            flex-grow: 1;
+            width: 135px;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        flex-wrap: nowrap;
+
+        & img {
+            width: 100%;
+        }
+    }
+}

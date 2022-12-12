@@ -1,0 +1,93 @@
+.profile {
+    background-image: linear-gradient(var(--first-profile-color), var(--last-profile-color));
+    padding-top: 30px;
+
+    @media (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: $desktop){
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.profile__title {
+    color: var(--profile-title-color);
+    margin: 0;
+    margin-bottom: 30px;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 39px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 60px;
+        font-size: 60px;
+        line-height: 78px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 80px;
+        font-size: 87px;
+        line-height: 113px;
+    }
+
+    & span {
+        color: var(--profile-span-color);
+    }
+}
+
+.profile__img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &--web {
+
+        & img {
+            width: 100%;
+            height: auto; 
+        }
+    }
+
+    &--dash {
+
+        & img {
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    @media (min-width: $tablet) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    & img {
+        display: block;
+        margin-bottom: 30px;
+
+        @media (min-width: $tablet) {
+            width: auto;
+            height: 470px; 
+        }
+
+        @media (min-width: $desktop) {
+            width: auto;
+            height: 860px;
+        }
+    }
+}
+
+.profile__img--dash img {
+    @media (min-width: $tablet) {
+        width: 768px;
+        height: auto;
+    }
+
+    @media (min-width: $desktop) {
+        width: 100%;
+        height: auto;
+    }
+}

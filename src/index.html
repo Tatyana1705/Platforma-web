@@ -1,0 +1,670 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Vashaplatforma</title>
+  <link rel="shortcut icon" href="myIcon.ico" type="image/x-icon" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/32.png">
+  <link rel="icon" href="img/favicon/32.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="img/favicon/apple-icon-180x180.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="css/style.min.css">
+  <link rel="preload" href="fonts/ptsans.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbold.woff" as="font">
+  <link rel="preload" href="fonts/ptsansitalic.woff" as="font">
+  <link rel="preload" href="fonts/ptsansbolditalic.woff" as="font">
+</head>
+
+<body>
+  <header class="page-header wrapper" id="up">
+    <div class="page-header__container">
+      <a class="page-header__logo">
+        <svg width="135" height="40" viewBox="0 0 135 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path
+            d="M8.39 3.454H6.326a.016.016 0 0 0-.016.016v13.369c0 .009.007.016.016.016H8.39a.016.016 0 0 0 .017-.016V3.469a.016.016 0 0 0-.017-.015ZM16.823 3.457v11.297c0 .003 0 .005.002.007a.017.017 0 0 0 .004.005.015.015 0 0 0 .005.004H18.904a.016.016 0 0 0 .016-.016V3.457a.016.016 0 0 0-.004-.011.016.016 0 0 0-.012-.005h-2.063a.016.016 0 0 0-.016.01.017.017 0 0 0-.002.006ZM29.41 6.842h-2.065a.016.016 0 0 0-.016.017v9.98c0 .009.007.016.016.016h2.065a.016.016 0 0 0 .016-.016v-9.98a.016.016 0 0 0-.016-.017ZM31.497 27.377h-2.064a.016.016 0 0 0-.017.016v9.825c0 .009.008.016.017.016h2.064a.016.016 0 0 0 .017-.016v-9.825a.016.016 0 0 0-.017-.016ZM11.59 29.516h2.053a.016.016 0 0 1 .016.016v7.68a.018.018 0 0 1-.018.017h-2.053a.016.016 0 0 1-.012-.005.016.016 0 0 1-.005-.011v-7.679a.018.018 0 0 1 .018-.018ZM17.33 29.516h-2.065a.016.016 0 0 0-.016.016v5.318c0 .01.007.017.016.017h2.065a.016.016 0 0 0 .016-.017v-5.318a.016.016 0 0 0-.016-.016ZM18.943 29.516h2.063a.016.016 0 0 1 .016.016v7.68a.018.018 0 0 1-.018.017h-2.061a.016.016 0 0 1-.016-.016v-7.679c0-.004.001-.009.004-.012a.018.018 0 0 1 .012-.006ZM6.326 31.57h2.063a.016.016 0 0 0 .016-.016v-5.492a.016.016 0 0 1 .005-.012.015.015 0 0 1 .006-.004h1.14a.016.016 0 0 0 .011-.005.016.016 0 0 0 .005-.012v-2.063a.016.016 0 0 0-.004-.012.016.016 0 0 0-.012-.006h-1.14a.017.017 0 0 1-.006-.004.017.017 0 0 1-.004-.005.016.016 0 0 1-.001-.007v-2.27a1.505 1.505 0 0 1 1.18-1.502 1.459 1.459 0 0 1 1.732 1.415c0 .004.002.008.005.011a.017.017 0 0 0 .011.005h2.063a.016.016 0 0 0 .018-.018 3.556 3.556 0 0 0-3.78-3.528c-1.896.12-3.324 1.788-3.324 3.687v2.2a.018.018 0 0 1-.006.012.018.018 0 0 1-.012.004H5.154c-.003 0-.005 0-.007.002a.016.016 0 0 0-.009.01v2.069c0 .005.001.009.004.012a.016.016 0 0 0 .012.005h1.132c.005 0 .009.001.012.004a.018.018 0 0 1 .006.012v5.491a.016.016 0 0 0 .022.016ZM31.539 3.441v7.195a.016.016 0 0 1-.005.012.016.016 0 0 1-.011.004h-.875a.018.018 0 0 0-.018.017v2.063a.018.018 0 0 0 .018.018h.878a.016.016 0 0 1 .017.016v4.075c0 .004.002.009.006.012a.018.018 0 0 0 .012.004h2.063a.016.016 0 0 0 .016-.016v-4.073a.017.017 0 0 1 .016-.016h.876l.007-.002a.017.017 0 0 0 .009-.01V10.67a.016.016 0 0 0-.004-.012.016.016 0 0 0-.012-.005h-.876a.016.016 0 0 1-.016-.016V3.441h-2.101ZM9.778 11.284v2.063a.016.016 0 0 0 .01.017c.003.001.006.002.008.001a4.93 4.93 0 0 0-.007-9.856.016.016 0 0 0-.011.017v2.063a.016.016 0 0 0 .016.016 2.832 2.832 0 0 1 0 5.663.016.016 0 0 0-.016.016ZM21.05 11.928a4.924 4.924 0 0 0 4.877 4.93c.005 0 .01-.003.013-.006a.018.018 0 0 0 .005-.013v-2.063a.016.016 0 0 0-.003-.016.016.016 0 0 0-.015-.005 2.833 2.833 0 0 1 0-5.665.016.016 0 0 0 .012-.005.016.016 0 0 0 .004-.011V7.016a.018.018 0 0 0-.018-.018 4.924 4.924 0 0 0-4.875 4.93ZM23.13 32.305a4.922 4.922 0 0 0 4.888 4.93.018.018 0 0 0 .018-.018v-2.063a.017.017 0 0 0-.004-.012.017.017 0 0 0-.012-.005 2.833 2.833 0 0 1 0-5.663.017.017 0 0 0 .012-.004.017.017 0 0 0 .004-.012v-2.06a.018.018 0 0 0-.005-.012.018.018 0 0 0-.013-.005 4.922 4.922 0 0 0-4.888 4.924Z"
+            fill="#005FBB" />
+          <path
+            d="M19.14 22.64a.016.016 0 0 0-.01.005.016.016 0 0 0-.004.01 2.832 2.832 0 1 1-5.665 0 .017.017 0 0 0-.004-.011.017.017 0 0 0-.012-.005h-2.063a.02.02 0 0 0-.018.018 4.93 4.93 0 0 0 9.858 0 .018.018 0 0 0-.005-.012.017.017 0 0 0-.012-.006h-2.064ZM15.284 21.595h2.063a.017.017 0 0 0 .011-.005.017.017 0 0 0 .005-.011 2.832 2.832 0 1 1 5.665.006c0 .002.002.004.003.005a.016.016 0 0 0 .005.004l.006.001H25.112a.017.017 0 0 0 .01-.01 4.93 4.93 0 0 0-9.856 0l.004.005a.016.016 0 0 0 .007.004l.007.001ZM39.915 0H37.85a.016.016 0 0 0-.016.016v39.968c0 .009.007.016.016.016h2.065a.016.016 0 0 0 .016-.016V.016A.016.016 0 0 0 39.915 0ZM2.08 0H.017A.016.016 0 0 0 0 .016v39.968c0 .009.007.016.016.016h2.065a.016.016 0 0 0 .016-.016V.016A.016.016 0 0 0 2.081 0ZM32.325 22.598h2.106a3.54 3.54 0 0 0-4.996-3.004V18.51h-2.097v6.775h2.097V22.87a1.476 1.476 0 0 1 1.122-1.456 1.457 1.457 0 0 1 1.768 1.185Z"
+            fill="#005FBB" />
+          <path
+            d="M51.187 13.228h5.48c1.297 0 2.356.33 3.178.992 1.088.848 1.632 2.044 1.632 3.588 0 1.602-.59 2.834-1.767 3.695-.782.595-1.828.893-3.138.894h-3.397v4.12a.211.211 0 0 1-.238.238h-1.75a.211.211 0 0 1-.238-.238V13.486c0-.068.027-.133.075-.181a.217.217 0 0 1 .163-.077Zm8.022 4.587c0-.966-.33-1.673-.992-2.12a3.151 3.151 0 0 0-1.848-.516h-3.197v5.283h3.04c.82 0 1.469-.152 1.945-.456.704-.468 1.055-1.198 1.055-2.191h-.003ZM63.522 13.486a.229.229 0 0 1 .26-.258h1.548c.163 0 .238.087.238.258v13.031a.21.21 0 0 1-.238.238h-1.548c-.173 0-.26-.08-.26-.238V13.486ZM71.487 19.107c-.755 0-1.622.265-2.602.794-.186.106-.305.078-.359-.08l-.435-.993a.238.238 0 0 1 .1-.318c.978-.635 2.163-.953 3.554-.953 1.245 0 2.165.331 2.76.994.504.568.756 1.376.755 2.422v5.546a.212.212 0 0 1-.142.23.21.21 0 0 1-.096.008h-1.35a.21.21 0 0 1-.239-.238v-.238h-.08a4.71 4.71 0 0 1-2.563.675c-.872 0-1.595-.225-2.163-.675a2.467 2.467 0 0 1-.954-2.047c0-1.074.583-1.849 1.747-2.325.835-.326 2.1-.551 3.794-.675v-.238c0-.622-.119-1.08-.357-1.37-.278-.346-.735-.52-1.37-.52Zm-.06 6.361a3.476 3.476 0 0 0 1.794-.517v-2.33c-2.392.134-3.589.657-3.589 1.57a1.05 1.05 0 0 0 .527.943c.384.226.823.34 1.268.328v.006ZM80.145 19.323v4.078c-.019.424.063.846.238 1.232.226.385.617.577 1.173.577.53-.01 1.04-.199 1.449-.536.173-.12.298-.106.378.039l.516 1.112c.067.12.032.225-.1.318-.754.544-1.674.816-2.76.816-1.033 0-1.788-.292-2.264-.875-.45-.543-.675-1.35-.675-2.422v-4.339h-1.013a.261.261 0 0 1-.18-.068.216.216 0 0 1-.078-.163v-1.13a.22.22 0 0 1 .078-.164.27.27 0 0 1 .18-.07H78.1v-1.78a.218.218 0 0 1 .08-.163.261.261 0 0 1 .178-.068h1.55a.217.217 0 0 1 .163.078.242.242 0 0 1 .07.163v1.75h2.82a.233.233 0 0 1 .163.07.228.228 0 0 1 .07.164v1.13a.241.241 0 0 1-.07.163.215.215 0 0 1-.163.079l-2.817.01ZM89.34 14.797a1.204 1.204 0 0 0-.993.416c-.225.28-.338.763-.338 1.45v1.046h2.326a.212.212 0 0 1 .239.24v1.13a.212.212 0 0 1-.239.245H88.01v7.193c0 .163-.086.238-.257.238h-1.55a.21.21 0 0 1-.238-.238v-7.193h-1.072a.258.258 0 0 1-.18-.069.215.215 0 0 1-.08-.163v-1.13a.218.218 0 0 1 .08-.164.268.268 0 0 1 .18-.07h1.072v-1.231c0-1.204.285-2.09.855-2.66.476-.503 1.17-.755 2.084-.756 1.152 0 2.105.285 2.86.855.132.093.163.199.1.318l-.516 1.072c-.067.172-.193.192-.379.06a2.8 2.8 0 0 0-1.628-.589ZM91.743 22.243a4.503 4.503 0 0 1 1.41-3.392 5.16 5.16 0 0 1 6.871 0c.927.887 1.391 2.019 1.392 3.396 0 1.43-.464 2.568-1.392 3.415-.9.861-2.045 1.292-3.435 1.292-1.39 0-2.535-.43-3.435-1.292-.94-.861-1.411-2-1.411-3.419Zm2.026 0c-.02.78.258 1.537.774 2.12a2.807 2.807 0 0 0 4.078 0 3.237 3.237 0 0 0 0-4.248 2.807 2.807 0 0 0-4.078 0 3.084 3.084 0 0 0-.774 2.128ZM107.671 19.364c-.714 0-1.234.298-1.559.894a4.377 4.377 0 0 0-.489 2.12v4.14a.208.208 0 0 1-.142.23.212.212 0 0 1-.097.007h-1.549c-.173 0-.258-.08-.258-.238v-8.562a.223.223 0 0 1 .078-.163.273.273 0 0 1 .18-.07h1.468a.27.27 0 0 1 .236.143.217.217 0 0 1 .022.09v.873h.06a2.697 2.697 0 0 1 2.364-1.27 3.33 3.33 0 0 1 2.184.733c.132.106.163.219.099.34l-.571 1.198c-.067.145-.186.163-.357.06a3.137 3.137 0 0 0-1.669-.525ZM113.589 22.265v4.252a.21.21 0 0 1-.238.238h-1.549c-.172 0-.258-.08-.258-.238v-8.562a.217.217 0 0 1 .08-.163.266.266 0 0 1 .178-.07h1.468a.27.27 0 0 1 .179.07c.024.02.044.045.058.073a.233.233 0 0 1 .022.09v.615h.059c.583-.675 1.398-1.013 2.447-1.013a3.554 3.554 0 0 1 1.867.478c.448.26.807.647 1.033 1.113a3.711 3.711 0 0 1 1.192-1.172 3.536 3.536 0 0 1 1.808-.417c1.046 0 1.88.291 2.502.874.622.583.939 1.503.952 2.76v5.324a.21.21 0 0 1-.238.238h-1.528c-.173 0-.26-.08-.26-.238V21.71c0-.82-.171-1.443-.515-1.868-.326-.37-.79-.555-1.39-.556-.688 0-1.198.271-1.53.815-.291.478-.437 1.173-.437 2.086v4.331a.198.198 0 0 1-.009.097.206.206 0 0 1-.133.133.209.209 0 0 1-.096.008h-1.529c-.172 0-.259-.08-.259-.238V21.71c0-.82-.172-1.443-.515-1.868-.327-.37-.79-.555-1.39-.556a1.642 1.642 0 0 0-1.53.874c-.294.502-.441 1.204-.441 2.106ZM131.166 19.107c-.754 0-1.621.265-2.602.794-.186.106-.305.078-.357-.08l-.437-.993a.237.237 0 0 1 .099-.318c.979-.635 2.164-.953 3.554-.953 1.246 0 2.166.331 2.762.994.502.568.754 1.376.754 2.422v5.546a.209.209 0 0 1-.142.23.213.213 0 0 1-.097.008h-1.35a.213.213 0 0 1-.179-.06.21.21 0 0 1-.059-.179v-.237h-.079c-.772.465-1.661.7-2.562.675-.87 0-1.592-.225-2.165-.675a2.474 2.474 0 0 1-.954-2.047c0-1.074.583-1.849 1.749-2.325.834-.326 2.098-.551 3.792-.675v-.238c0-.622-.119-1.08-.357-1.37-.277-.346-.734-.52-1.37-.52Zm-.059 6.361a3.472 3.472 0 0 0 1.786-.517v-2.33c-2.392.134-3.588.657-3.588 1.57a1.045 1.045 0 0 0 .525.943c.388.229.834.343 1.285.328l-.008.006Z"
+            fill="#000">
+        </svg>
+      </a>
+      <div class="page-header__toggle">
+        <button class="toggle toggle--open" type="button">
+          <span class="visually-hidden">Открыть меню</span>
+        </button>
+      </div>
+    </div>
+
+    <nav class="page-header__nav main-nav main-nav--close">
+      <ul class="main-nav__list">
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#advantages">Работа в «Platforma»</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#team">Ждем в команду</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#about">О компании</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#works">Наши работы</a>
+        </li>
+        <li class="main-nav__item">
+          <a class="main-nav__link" href="#page-footer">Контакты</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="page-main">
+    <section class="promo wrapper">
+      <div class="promo__img">
+        <picture>
+          <source srcset="img/img_start_desctop-1.webp 1x, img/img_start_desctopX2.webp 2x">
+          <img src="img/img_start_desctop-1.png" srcset="img/img_start_desctopX2.png 2x" width="277" height="285"
+            alt="Логотоип Platforma">
+        </picture>
+      </div>
+      <div class="promo__content">
+        <h1 class="visually-hidden">IT компания «Platforma»</h1>
+        <p class="promo__text">Отдел разработки, который решает сложнейшие IT-задачи и&nbsp;работает с&nbsp;ведущими
+          технологическими компаниями в&nbsp;сфере B2B</p>
+        <a class="promo__btn btn" href="#form">Отправить резюме</a>
+        <p class="promo__tagline">Нам нужен именно&nbsp;ты!</p>
+      </div>
+    </section>
+
+    <section class="perk wrapper">
+      <h2 class="visually-hidden">Наш прогресс</h2>
+      <div class="perk__container">
+        <div class="perk__item">
+          <dt>10+</dt>
+          <dd>Лет<br />в разработке</dd>
+        </div>
+        <div class="perk__item">
+          <dt>30+</dt>
+          <dd>Штат<br />разработчиков</dd>
+        </div>
+        <div class="perk__item">
+          <dt>5600+</dt>
+          <dd>Выработка<br />час/месяц</dd>
+        </div>
+        <div class="perk__item">
+          <dt>20+</dt>
+          <dd>Production<br />проектов</dd>
+        </div>
+      </div>
+    </section>
+
+    <section class="software">
+      <div class="wrapper page-section">
+        <h2 class="software__title">С&nbsp;чем мы&nbsp;<span>работаем</span></h2>
+        <p class="software__text">Выйдите за&nbsp;рамки простого приложения, мы&nbsp;предоставляем огромный опыт нашей
+          команды и&nbsp;наших возможностей</p>
+        <ul class="software__list">
+          <li class="software__item">#Kotlin</li>
+          <li class="software__item">#Swift</li>
+          <li class="software__item">#JavaScript</li>
+          <li class="software__item">#PHP</li>
+          <li class="software__item">#Python</li>
+          <li class="software__item">#PostgreSQL</li>
+          <li class="software__item">#Redis</li>
+          <li class="software__item">#Node.js</li>
+          <li class="software__item">#React</li>
+          <li class="software__item">#Docker</li>
+        </ul>
+        <a class="software__btn btn" href="#form">Отправить резюме</a>
+      </div>
+    </section>
+
+    <section class="advantages" id="advantages">
+      <div class="wrapper page-section">
+        <h2 class="advantages__title">Трудоустройство <span>в&nbsp;нашей компании</span> обеспечит</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <h3 class="advantages__subtitle advantages__subtitle--job">Гарантированную<br />занятость</h3>
+            <p class="advantages__text">Непрерывное развитие новых направлений и&nbsp;ниш обеспечивает гарантированную
+              занятость и&nbsp;профессиональное развитие нашего персонала</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__subtitle advantages__subtitle--career">Стремительное<br />развитие</h3>
+            <p class="advantages__text">Работа с&nbsp;более опытными разработчиками, прокачивание навыков. Корпоративный
+              английский</p>
+          </li>
+          <li class="advantages__item">
+            <h3 class="advantages__subtitle advantages__subtitle--pay">Высокие выплаты<br />и&nbsp;карьерный рост</h3>
+            <p class="advantages__text">Platforma ценит талантливых и&nbsp;амбициозных разработчиков. Выплачивает
+              переработки, билеты на&nbsp;митапы, ДМС, а&nbsp;также другие приятные бонусы</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="form" id="form">
+      <div class="form__wrapper wrapper page-section">
+        <h2 class="form__title">Ждем ваше резюме</h2>
+        <p class="form__text">Мы&nbsp;создаем технически сильный продукт с&nbsp;низкими эксплуатационными расходами,
+          готовый к&nbsp;доминированию на&nbsp;рынке</p>
+        <form class="form__container" id="page-form">
+          <div class="form__input-list">
+            <input class="form__input" type="text" name="name" placeholder="Имя" required>
+            <input class="form__input" type="tel" name="phone" placeholder="Телефон" required>
+            <input class="form__input" type="email" name="e-mail" placeholder="Почта" required>
+          </div>
+          <textarea class="form__comment" placeholder="Комментарий"></textarea>
+          <div class="form__upload upload">
+            <input class="upload__input" type="file" name="files" id="upload__input_1" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip" multiple>
+            <label class="upload__label" for="upload__input_1">
+              <svg class="upload__icon" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 18">
+                <path
+                  d="M1 5.728V12.2c0 1.273.527 2.494 1.464 3.394C3.402 16.494 4.674 17 6 17a5.108 5.108 0 0 0 3.536-1.406A4.704 4.704 0 0 0 11 12.2v-8c0-.849-.351-1.663-.976-2.263A3.405 3.405 0 0 0 7.667 1c-.884 0-1.732.337-2.357.937A3.136 3.136 0 0 0 4.333 4.2v7.346c0 .21.043.418.127.612s.207.37.361.52c.155.148.339.265.541.346.202.08.42.122.638.122.442 0 .866-.169 1.179-.469.312-.3.488-.707.488-1.131V5.8"
+                  stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="upload__text">Добавить файл</span>
+            </label>
+          </div>
+          <div class="form__btn">
+            <button class="form__button btn" type="submit">Отправить</button>
+            <a class="form__link" href="pact.html">Отправляя заявку я&nbsp;соглашаюсь на&nbsp;обработку персональной
+              информации
+              на&nbsp;условиях, определенных <span>Политикой конфиденциальности</span></a>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <section class="team" id="team">
+      <div class="team__container wrapper page-section">
+        <h2 class="team__title">Мы ждем в команду</h2>
+        <div class="team__buttons">
+          <button class="team__btn team__btn--left gallery-btn-left" type="button" disabled>
+            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.875 15c0 7.249 5.876 13.125 13.125 13.125S28.125 22.249 28.125 15 22.249 1.875 15 1.875 1.875 7.751 1.875 15ZM30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15Zm-8.438-.938a.937.937 0 1 1 0 1.876H10.701l4.024 4.024a.937.937 0 0 1-1.325 1.326l-5.625-5.625a.937.937 0 0 1 0-1.326L13.4 8.712a.937.937 0 1 1 1.325 1.326l-4.024 4.024h10.861Z" />
+            </svg>
+          </button>
+          <button class="team__btn team__btn--right gallery-btn-right" type="button">
+            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M28.125 15c0-7.249-5.876-13.125-13.125-13.125S1.875 7.751 1.875 15 7.751 28.125 15 28.125 28.125 22.249 28.125 15ZM0 15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15Zm8.438.938a.937.937 0 1 1 0-1.876h10.861l-4.024-4.024A.938.938 0 0 1 16.6 8.712l5.625 5.625a.937.937 0 0 1 0 1.326L16.6 21.288a.937.937 0 0 1-1.325-1.326l4.024-4.024H8.438Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="team__wrapper page-section">
+        <div class="team__gallery gallery">
+          <div class="team__block gallery-block" style="left: 0">
+            <div class="team__content gallery-content">
+              <picture>
+                <source srcset="img/team-1.webp 1x, img/team-1@2x.webp 2x">
+                <img src="img/team-1.jpg" srcset="img/team-1@2x.jpg 2x" width="324" height="199" alt="UX/UI дизайнеры">
+              </picture>
+              <p class="team__text">UX/UI дизайнеров</p>
+              <p class="team__soft">Adobe Photoshop &nbsp; Figma &nbsp; HTML &nbsp; CSS</p>
+            </div>
+            <div class="team__content gallery-content">
+              <picture>
+                <source srcset="img/team-2.webp 1x, img/team-2@2x.webp 2x">
+                <img src="img/team-2.jpg" srcset="img/team-2@2x.jpg 2x" width="324" height="199"
+                  alt="Мобильные разработчики">
+              </picture>
+              <p class="team__text">Мобильных разработчиков</p>
+              <p class="team__soft">Kotlin &nbsp; Swift</p>
+            </div>
+            <div class="team__content gallery-content">
+              <picture>
+                <source srcset="img/team-3.webp 1x, img/team-3@2x.webp 2x">
+                <img src="img/team-3.jpg" srcset="img/team-3@2x 2x" width="324" height="199"
+                  alt="Бэкенд - разработчики">
+              </picture>
+              <p class="team__text">Бэкенд - разработчиков</p>
+              <p class="team__soft">Node.js &nbsp; PostgreSQL &nbsp; Redis</p>
+            </div>
+            <div class="team__content gallery-content">
+              <picture>
+                <source srcset="img/team-4.webp 1x, img/team-4@2x.webp 2x">
+                <img src="img/team-4.jpg" srcset="img/team-4@2x.jpg 2x" width="324" height="199"
+                  alt="DevOps - разработчики">
+              </picture>
+              <p class="team__text">DevOps - разработчиков</p>
+              <p class="team__soft">K8S &nbsp; Docker &nbsp; CI/CD</p>
+            </div>
+            <div class="team__end"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="wrapper page-section">
+        <h2 class="about__title">О компании</h2>
+        <div class="about__content">
+          <div class="about__gallery">
+            <div class="about__block">
+
+              <div class="about__item about__item--fade">
+
+                <picture>
+                  <source type=" image/webp" media="(min-width: 1220px)"
+                    srcset="img/about-1-desk.webp 1x, img/about-1-desk@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/img/about-1-tab.webp 1x, img/about-1-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/about-1-mob.webp 1x, img/about-1-mob@2x.webp 2x">
+
+                  <source media="(min-width: 1220px)" srcset="img/about-1-desk.jpg 1x, img/about-1-desk@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/about-1-tab.jpg 1x, img/about-1-tab@2x.jpg 2x">
+                  <img src="img/about-1-mob.jpg" srcset="img/about-1-mob@2x.jpg 2x" width="324" height="231"
+                    alt="Фото комманды">
+                </picture>
+              </div>
+
+              <div class="about__item about__item--fade">
+                <picture>
+                  <source type=" image/webp" media="(min-width: 1220px)"
+                    srcset="img/about-2-desk.webp 1x, img/about-2-desk@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/img/about-2-tab.webp 1x, img/about-2-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/about-2-mob.webp 1x, img/about-2-mob@2x.webp 2x">
+
+                  <source media="(min-width: 1220px)" srcset="img/about-2-desk.jpg 1x, img/about-2-desk@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/about-2-tab.jpg 1x, img/about-2-tab@2x.jpg 2x">
+                  <img src="img/about-2-mob.jpg" srcset="img/about-2-mob@2x.jpg 2x" width="324" height="231"
+                    alt="Фото комманды">
+                </picture>
+              </div>
+
+              <div class="about__item about__item--fade">
+                <picture>
+                  <source type=" image/webp" media="(min-width: 1220px)"
+                    srcset="img/about-3-desk.webp 1x, img/about-3-desk@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)"
+                    srcset="img/img/about-3-tab.webp 1x, img/about-3-tab@2x.webp 2x">
+                  <source type="image/webp" srcset="img/about-3-mob.webp 1x, img/about-3-mob@2x.webp 2x">
+
+                  <source media="(min-width: 1220px)" srcset="img/about-3-desk.jpg 1x, img/about-3-desk@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/about-3-tab.jpg 1x, img/about-3-tab@2x.jpg 2x">
+                  <img src="img/about-3-mob.jpg" srcset="img/about-3-mob@2x.jpg 2x" width="324" height="231"
+                    alt="Фото комманды">
+                </picture>
+              </div>
+            </div>
+
+
+            <div class="about__buttons">
+              <button class="about__btn about__btn--left" type="button">
+                <svg width="36" height="29" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 29">
+                  <path
+                    d="M35.692 14.5c0-1.144-.979-2.071-2.187-2.071H8.16l9.39-8.893a1.995 1.995 0 0 0 0-2.93 2.275 2.275 0 0 0-3.093 0L1.333 13.037a1.995 1.995 0 0 0 0 2.929l13.125 12.428c.854.81 2.24.81 3.094 0a1.995 1.995 0 0 0 0-2.93L8.16 16.572h25.344c1.208 0 2.187-.927 2.187-2.071Z" />
+                </svg>
+              </button>
+              <p class="about__label">Наша команда</p>
+              <button class="about__btn about__btn--right" type="button">
+                <svg width="36" height="29" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 36 29">
+                  <path
+                    d="M.691 14.5c0 1.144.98 2.071 2.188 2.071h25.344l-9.39 8.893a1.995 1.995 0 0 0 0 2.93c.853.808 2.238.808 3.093 0l13.125-12.43a1.995 1.995 0 0 0 0-2.929L21.926.607a2.275 2.275 0 0 0-3.094 0 1.995 1.995 0 0 0 0 2.93l9.39 8.892H2.88C1.67 12.429.69 13.356.69 14.5Z" />
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <div class="about__text">
+            <p>Платформа&nbsp;&mdash; это&nbsp;IT компания с&nbsp;сильной командой. Мы&nbsp;помогаем и&nbsp;стартапам,
+              и&nbsp;компаниям с&nbsp;давней историей обслуживая сразу несколько направлений информационных технологий.
+            </p>
+            <p>У&nbsp;нас работают сильные математики и&nbsp;программисты, которые ежедневно решают сложные задачи.
+              Здесь
+              можно строить вертикальную и&nbsp;горизонтальную карьеру, а&nbsp;также пробовать себя в&nbsp;различных
+              проектах. Здесь работают увлеченные и&nbsp;талантливые люди, да&nbsp;и&nbsp;технологии не&nbsp;стоят
+              на&nbsp;месте. Чтобы оставаться на&nbsp;уровне, нужно постоянно развиваться&nbsp;&mdash;
+              и&nbsp;в&nbsp;Платформе все для этого есть: внешние программы обучения, митапы, корпоративный английский
+              и&nbsp;многое другое.</p>
+            <p>В&nbsp;нашем комфортном офисе есть место не&nbsp;только для работы, но&nbsp;и&nbsp;для отдыха:
+              собственный
+              балкончик, чай, кофе и&nbsp;печеньки, и&nbsp;ни&nbsp;какого дресс-кода. Мы&nbsp;также заботимся
+              о&nbsp;здоровье: компания предлагает программу ДМС для сотрудников. И&nbsp;конечно&nbsp;же у&nbsp;нас есть
+              корпоративные выезды и&nbsp;дружная команда, которая ждет именно тебя.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="partners">
+      <div class="wrapper page-section">
+        <h2 class="partners__title">Наши <span>партнеры</span></h2>
+        <div class="partners__logo">
+
+          <picture>
+            <source srcset="img/tany.webp 1x, img/tany@2x.webp 2x">
+            <img src="img/tany.png" srcset="img/tany@2x.png 2x" width="248" height="170" alt="Логотоип Tany">
+          </picture>
+
+          <picture>
+            <source srcset="img/logo.webp 1x, img/logo@2x.webp 2x">
+            <img src="img/logo.png" srcset="img/logo@2x.png 2x" width="248" height="170" alt="Логотоип">
+          </picture>
+
+          <picture>
+            <source srcset="img/apple.webp 1x, img/apple@2x.webp 2x">
+            <img src="img/apple.png" srcset="img/apple@2x.png 2x" width="248" height="170" alt="Логотоип MyApple">
+          </picture>
+
+          <picture>
+            <source srcset="img/gorky.webp 1x, img/gorky@2x.webp 2x">
+            <img src="img/gorky.png" srcset="img/gorky@2x.png 2x" width="248" height="170" alt="Логотоип Gorky">
+          </picture>
+
+          <picture>
+            <source srcset="img/vsh.webp 1x, img/vsh@2x.webp 2x">
+            <img src="img/vsh.png" srcset="img/vsh@2x.png 2x" width="248" height="170"
+              alt="Логотоип Высшая Школа Экономики">
+          </picture>
+
+        </div>
+      </div>
+
+    </section>
+
+    <section class="works" id="works">
+      <div class="works__container wrapper page-section">
+        <h2 class="works__title"><span>Наши</span> работы</h2>
+        <div class="works__buttons">
+          <button class="works__btn works__btn--left gallery-btn-left" type="button" disabled>
+            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.875 15c0 7.249 5.876 13.125 13.125 13.125S28.125 22.249 28.125 15 22.249 1.875 15 1.875 1.875 7.751 1.875 15ZM30 15c0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15Zm-8.438-.938a.937.937 0 1 1 0 1.876H10.701l4.024 4.024a.937.937 0 0 1-1.325 1.326l-5.625-5.625a.937.937 0 0 1 0-1.326L13.4 8.712a.937.937 0 1 1 1.325 1.326l-4.024 4.024h10.861Z" />
+            </svg>
+          </button>
+          <button class="works__btn works__btn--right gallery-btn-right" type="button">
+            <svg width="30" height="30" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M28.125 15c0-7.249-5.876-13.125-13.125-13.125S1.875 7.751 1.875 15 7.751 28.125 15 28.125 28.125 22.249 28.125 15ZM0 15C0 6.716 6.716 0 15 0c8.284 0 15 6.716 15 15 0 8.284-6.716 15-15 15-8.284 0-15-6.716-15-15Zm8.438.938a.937.937 0 1 1 0-1.876h10.861l-4.024-4.024A.938.938 0 0 1 16.6 8.712l5.625 5.625a.937.937 0 0 1 0 1.326L16.6 21.288a.937.937 0 0 1-1.325-1.326l4.024-4.024H8.438Z" />
+            </svg>
+          </button>
+        </div>
+      </div>
+
+      <div class="works__wrapper page-section">
+        <div class="works__gallery gallery">
+          <div class="works__block gallery-block" style="left: 0">
+
+            <a class="works__content gallery-content" href="project_we.html">
+              <picture>
+                <source srcset="img/we.webp">
+                <img src="img/we.jpg" width="324" height="199" alt="Приложение МЫ">
+              </picture>
+              <p class="works__text">Приложение &laquo;МЫ&raquo;</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_ktogde.html">
+              <picture>
+                <source srcset="img/ktogde.webp">
+                <img src="img/ktogde.jpg" width="324" height="199" alt="Приложение Кто? Где?">
+              </picture>
+              <p class="works__text">Landing Page &laquo;Кто? Где?&raquo;</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_gunsmith.html">
+              <picture>
+                <source srcset="img/gunsmith.webp">
+                <img src="img/gunsmith.jpg" width="324" height="199" alt="Приложение Оружейник">
+              </picture>
+              <p class="works__text">Приложение &laquo;Оружейник&raquo;</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_deputat.html">
+              <picture>
+                <source srcset="img/deputat.webp">
+                <img src="img/deputat.jpg" width="324" height="199" alt="Сайт для депутата Госдумы России">
+              </picture>
+              <p class="works__text">Landing Page депутата Госдумы России</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_gazprom.html">
+              <picture>
+                <source srcset="img/gazprom.webp">
+                <img src="img/gazprom.jpg" width="324" height="199" alt="Приложение Газпром Профсоюз">
+              </picture>
+              <p class="works__text">Приложение &laquo;Газпром Профсоюз&raquo;</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_cup.html">
+              <picture>
+                <source srcset="img/cup.webp">
+                <img src="img/cup.jpg" width="324" height="199" alt="Интерфейс аналитики для ЦУП">
+              </picture>
+              <p class="works__text">Интерфейс &laquo;Система аналитики для ЦУП&raquo;</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_up.html">
+              <picture>
+                <source srcset="img/vverh.webp">
+                <img src="img/vverh.jpg" width="324" height="199" alt="Приложение Вверх">
+              </picture>
+              <p class="works__text">Приложение &laquo;Вверх&raquo;</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_social.html">
+              <picture>
+                <source srcset="img/social.webp">
+                <img src="img/social.jpg" width="324" height="199" alt="Интерфейс МенеджерСоциал">
+              </picture>
+              <p class="works__text">Интерфейс &laquo;Social Manager&raquo;</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_moscow.html">
+              <picture>
+                <source srcset="img/moscow.webp">
+                <img src="img/moscow.jpg" width="324" height="199" alt="Приложение Kuda Moscow">
+              </picture>
+              <p class="works__text">Приложение &laquo;Kuda Moscow&raquo;</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_chat.html">
+              <picture>
+                <source srcset="img/chat_img.webp">
+                <img src="img/chat_img.jpg" width="324" height="199" alt="Приложение Online Chat">
+              </picture>
+              <p class="works__text">Приложение Online Chat</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+            <a class="works__content gallery-content" href="project_crm.html">
+              <picture>
+                <source srcset="img/crm.webp">
+                <img src="img/crm.jpg" width="324" height="199" alt="Web-site по SRM системе ">
+              </picture>
+              <p class="works__text">Web-site по&nbsp;SRM системе</p>
+              <div class="works__link">
+                <p>Подробнее</p>
+                <svg width="13" height="10" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 13 10">
+                  <path d="M0 5c0 .394.364.714.813.714h9.413L6.738 8.781a.655.655 0 0 0 0 1.01.894.894 0 0 0 1.149 0l4.875-4.286a.655.655 0 0 0 0-1.01L7.887.209a.893.893 0 0 0-1.149 0 .655.655 0 0 0 0 1.01l3.488 3.067H.812C.364 4.286 0 4.606 0 5Z"/>
+                </svg>
+              </div>
+            </a>
+
+            <div class="works__end"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="wrapper page-section">
+        <h2 class="services__title">Возможности компании</h2>
+        <p class="services_text">Наши услуги решают ключевые бизнес-задачи и&nbsp;позволяют Вам завоевывать рынки
+          с&nbsp;неоспоримым конкурентным преимуществом</p>
+        <ul class="services__list">
+          <li class="servises__item servises__item--mobile">
+            <h3 class="servises__subtitle">Мобильная разработка</h3>
+            <p class="services_paragraphly">Создаем корпоративные приложения, геолокационные и&nbsp;медиа сервисы</p>
+          </li>
+          <li class="servises__item servises__item--design">
+            <h3 class="servises__subtitle">Разработка UX/UI дизайна</h3>
+            <p class="services_paragraphly">Адаптируем фирменный стиль заказчика к&nbsp;гайдлайнам платформ</p>
+          </li>
+          <li class="servises__item servises__item--upport">
+            <h3 class="servises__subtitle">Техническая поддержка</h3>
+            <p class="services_paragraphly">Осуществляем разработку веб-сервисов различной функциональности
+              и&nbsp;сложности</p>
+          </li>
+          <li class="servises__item servises__item--analytics">
+            <h3 class="servises__subtitle">Продуктовая аналитика</h3>
+            <p class="services_paragraphly">Внедрите цифровую трансформацию на&nbsp;своем предприятии. Упростите
+              маркетинг и&nbsp;разумно развивайте свой бизнес</p>
+          </li>
+          <li class="servises__item servises__item--testing">
+            <h3 class="servises__subtitle">Тестирование ПО</h3>
+            <p class="services_paragraphly">Контролируем качество на&nbsp;всех этапах разработки продукта</p>
+          </li>
+          <li class="servises__item servises__item--project">
+            <h3 class="servises__subtitle">Проектное управление</h3>
+            <p class="services_paragraphly">Для ведения проекта мы&nbsp;выделяем менеджера, который планирует
+              и&nbsp;регулирует все процессы</p>
+          </li>
+        </ul>
+        <button class="services__button btn" id="open-modal" type="button">Отправить заявку на&nbsp;разработку</button>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="page-footer" id="page-footer">
+    <div class="wrapper page-section">
+      <div class="page-footer__address">
+        <div class="page-footer__contacts">
+          <div class="page-footer__logo">
+            <svg width="152" height="45" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 152 45">
+              <path
+                d="M9.45 3.885H7.126a.018.018 0 0 0-.018.019v15.04c0 .01.008.018.018.018h2.326c.01 0 .018-.008.018-.018V3.904a.018.018 0 0 0-.018-.018Zm9.5.005v12.716a.018.018 0 0 0 .012.01h2.331c.005 0 .01-.001.013-.005a.018.018 0 0 0 .005-.012V3.889a.018.018 0 0 0-.005-.012.018.018 0 0 0-.013-.006H18.97a.019.019 0 0 0-.015.005.018.018 0 0 0-.006.014Zm14.177 3.808h-2.326a.018.018 0 0 0-.018.018v11.227c0 .01.008.019.018.019h2.326c.01 0 .018-.009.018-.019V7.716a.018.018 0 0 0-.018-.018ZM35.48 30.8h-2.326a.018.018 0 0 0-.019.017V41.87c0 .01.008.019.019.019h2.325a.02.02 0 0 0 .019-.019V30.818a.018.018 0 0 0-.019-.019Zm-22.425 2.405h2.313c.005 0 .01.002.013.006a.018.018 0 0 1 .005.013v8.638a.02.02 0 0 1-.006.015.02.02 0 0 1-.014.006h-2.313a.019.019 0 0 1-.014-.006.019.019 0 0 1-.005-.013v-8.638a.02.02 0 0 1 .02-.02Zm6.466 0h-2.325a.018.018 0 0 0-.019.019v5.982c0 .01.008.019.019.019h2.325a.02.02 0 0 0 .019-.019v-5.982a.018.018 0 0 0-.019-.019Zm1.817 0h2.324a.018.018 0 0 1 .018.019v8.638a.02.02 0 0 1-.006.015.02.02 0 0 1-.014.006h-2.322a.018.018 0 0 1-.018-.019v-8.638a.02.02 0 0 1 .018-.02ZM7.126 35.516h2.323c.005 0 .01-.002.013-.005a.018.018 0 0 0 .006-.013V29.32l.001-.008a.019.019 0 0 1 .005-.006.018.018 0 0 1 .014-.005h1.276a.018.018 0 0 0 .018-.018v-2.32a.018.018 0 0 0-.01-.02.02.02 0 0 0-.008 0H9.488a.018.018 0 0 1-.019-.012.019.019 0 0 1-.001-.007v-2.555a1.691 1.691 0 0 1 1.328-1.688 1.647 1.647 0 0 1 1.788.9c.105.215.16.451.164.691a.018.018 0 0 0 .018.018h2.323a.019.019 0 0 0 .02-.012 3.996 3.996 0 0 0-2.655-3.75 4.011 4.011 0 0 0-1.603-.227c-2.134.134-3.744 2.012-3.744 4.148v2.475a.02.02 0 0 1-.02.018H5.805a.018.018 0 0 0-.018.013.019.019 0 0 0 0 .008v2.32a.018.018 0 0 0 .018.019h1.276a.02.02 0 0 1 .02.018v6.178c0 .003 0 .006.002.008a.018.018 0 0 0 .023.01Zm28.4-31.644v8.094c0 .005-.002.01-.005.013a.018.018 0 0 1-.013.005h-.985a.02.02 0 0 0-.013.005.02.02 0 0 0-.007.013v2.32a.02.02 0 0 0 .02.021h.99a.018.018 0 0 1 .018.019v4.584a.02.02 0 0 0 .02.018h2.323c.005 0 .01-.002.013-.005a.018.018 0 0 0 .006-.013v-4.582c0-.005.002-.01.005-.013a.018.018 0 0 1 .013-.006h.987a.018.018 0 0 0 .014-.006.018.018 0 0 0 .004-.014v-2.323a.018.018 0 0 0-.018-.018h-.987a.018.018 0 0 1-.018-.018V3.872h-2.367Zm-24.512 8.823v2.32a.019.019 0 0 0 .006.016.02.02 0 0 0 .007.004l.008.001a5.556 5.556 0 0 0 3.857-1.661 5.542 5.542 0 0 0 0-7.767 5.556 5.556 0 0 0-3.865-1.66.019.019 0 0 0-.007.004.019.019 0 0 0-.006.015v2.32c0 .005.002.01.006.014a.018.018 0 0 0 .013.005 3.192 3.192 0 0 1 3.11 3.185 3.184 3.184 0 0 1-3.11 3.186.018.018 0 0 0-.019.018Zm12.696.724a5.537 5.537 0 0 0 1.605 3.902 5.55 5.55 0 0 0 3.89 1.643.02.02 0 0 0 .014-.006.02.02 0 0 0 .006-.014v-2.32a.017.017 0 0 0 0-.01.017.017 0 0 0-.003-.009.018.018 0 0 0-.017-.006 3.192 3.192 0 0 1-3.19-3.187 3.185 3.185 0 0 1 3.19-3.186.018.018 0 0 0 .018-.018V7.893a.02.02 0 0 0-.02-.02 5.55 5.55 0 0 0-3.89 1.644 5.536 5.536 0 0 0-1.602 3.902Zm2.345 22.924a5.534 5.534 0 0 0 1.607 3.908 5.548 5.548 0 0 0 3.899 1.638.02.02 0 0 0 .014-.006.02.02 0 0 0 .006-.014v-2.321a.018.018 0 0 0-.018-.018 3.192 3.192 0 0 1-3.11-3.186 3.184 3.184 0 0 1 3.11-3.185.018.018 0 0 0 .018-.018v-2.317a.02.02 0 0 0-.02-.02 5.548 5.548 0 0 0-3.897 1.636 5.534 5.534 0 0 0-1.61 3.903Z"
+                fill="#fff" />
+              <path
+                d="M21.56 25.47a.018.018 0 0 0-.016.018 3.184 3.184 0 0 1-3.191 3.186 3.193 3.193 0 0 1-3.19-3.186.018.018 0 0 0-.018-.018H12.82a.023.023 0 0 0-.02.02 5.542 5.542 0 0 0 1.662 3.852 5.557 5.557 0 0 0 7.778 0 5.543 5.543 0 0 0 1.663-3.852.02.02 0 0 0-.018-.02H21.56Zm-4.344-1.176h2.323c.005 0 .01-.001.013-.005a.018.018 0 0 0 .006-.013 3.184 3.184 0 0 1 3.19-3.186 3.192 3.192 0 0 1 3.195 3.199.016.016 0 0 0 .012.005h2.324a.019.019 0 0 0 .015-.005.018.018 0 0 0 .004-.007 5.542 5.542 0 0 0-1.662-3.86 5.556 5.556 0 0 0-9.44 3.852.019.019 0 0 0 .005.015.018.018 0 0 0 .015.005ZM44.961 0h-2.325a.018.018 0 0 0-.019.018v44.964c0 .01.008.018.019.018h2.325c.01 0 .019-.008.019-.018V.018A.018.018 0 0 0 44.96 0ZM2.344 0H.018A.018.018 0 0 0 0 .018v44.964c0 .01.008.018.018.018h2.326c.01 0 .018-.008.018-.018V.018A.018.018 0 0 0 2.344 0Zm34.067 25.422h2.373a3.98 3.98 0 0 0-1.926-3.166 3.991 3.991 0 0 0-3.702-.213v-1.22h-2.362v7.623h2.362v-2.719a1.659 1.659 0 0 1 1.263-1.638 1.642 1.642 0 0 1 1.992 1.333Zm21.247-10.541h6.174c1.46 0 2.653.372 3.58 1.116 1.224.954 1.837 2.3 1.837 4.037 0 1.802-.664 3.188-1.99 4.157-.881.669-2.06 1.004-3.535 1.005h-3.826v4.636a.236.236 0 0 1-.268.268h-1.972a.238.238 0 0 1-.268-.268v-14.66c0-.077.031-.15.085-.204a.245.245 0 0 1 .183-.087Zm9.037 5.16c0-1.086-.373-1.881-1.117-2.385a3.553 3.553 0 0 0-2.082-.58h-3.602v5.944h3.424c.924 0 1.655-.171 2.192-.514.792-.526 1.188-1.348 1.188-2.464h-.003Zm4.858-4.87a.256.256 0 0 1 .292-.29h1.744c.183 0 .268.098.268.29v14.66a.236.236 0 0 1-.268.269h-1.744c-.195 0-.292-.09-.292-.268v-14.66Zm8.972 6.323c-.85 0-1.827.298-2.93.894-.21.12-.344.088-.405-.09l-.49-1.117a.267.267 0 0 1 .112-.358c1.102-.715 2.437-1.072 4.003-1.072 1.403 0 2.44.373 3.11 1.118.568.64.851 1.548.85 2.725v6.239a.236.236 0 0 1-.268.268h-1.522a.238.238 0 0 1-.258-.16.236.236 0 0 1-.01-.108v-.268h-.09a5.311 5.311 0 0 1-2.887.76c-.983 0-1.796-.253-2.436-.76a2.778 2.778 0 0 1-1.075-2.303c0-1.207.656-2.08 1.968-2.615.94-.367 2.365-.62 4.274-.76v-.268c0-.7-.134-1.213-.403-1.541-.313-.39-.828-.584-1.543-.584Zm-.068 7.157a3.921 3.921 0 0 0 2.021-.581v-2.621c-2.695.15-4.042.738-4.042 1.765a1.179 1.179 0 0 0 .593 1.061 2.68 2.68 0 0 0 1.428.369v.007Zm9.821-6.912v4.587c-.022.477.07.952.268 1.386.254.433.694.65 1.321.65a2.642 2.642 0 0 0 1.632-.604c.195-.134.336-.12.426.044l.58 1.252c.076.133.038.253-.111.357-.85.612-1.886.918-3.11.918-1.163 0-2.013-.328-2.55-.984-.507-.611-.76-1.52-.76-2.725v-4.88h-1.141a.294.294 0 0 1-.202-.077.245.245 0 0 1-.088-.184v-1.271a.246.246 0 0 1 .088-.184.305.305 0 0 1 .202-.079h1.143v-2.002a.245.245 0 0 1 .09-.183.294.294 0 0 1 .2-.078h1.745a.245.245 0 0 1 .184.089.271.271 0 0 1 .08.183v1.97h3.176a.263.263 0 0 1 .184.078.256.256 0 0 1 .079.184v1.271a.272.272 0 0 1-.08.184.245.245 0 0 1-.183.088l-3.173.01Zm10.357-5.092a1.36 1.36 0 0 0-1.119.468c-.253.314-.38.858-.38 1.63v1.177h2.62a.24.24 0 0 1 .201.069.236.236 0 0 1 .067.201v1.272a.236.236 0 0 1-.268.275h-2.62v8.092c0 .184-.097.268-.29.268H97.1a.236.236 0 0 1-.268-.268V21.74h-1.207a.29.29 0 0 1-.203-.077.242.242 0 0 1-.09-.184v-1.271a.244.244 0 0 1 .09-.184.301.301 0 0 1 .203-.079h1.207V18.56c0-1.355.32-2.352.963-2.993.536-.566 1.319-.849 2.348-.85 1.297 0 2.371.32 3.221.962.149.104.183.223.112.357l-.581 1.206c-.075.195-.217.217-.426.068a3.156 3.156 0 0 0-1.834-.662Zm2.707 8.377a5.052 5.052 0 0 1 1.589-3.817 5.815 5.815 0 0 1 7.739 0c1.044.998 1.566 2.272 1.567 3.82 0 1.61-.522 2.89-1.567 3.843-1.014.969-2.304 1.453-3.87 1.453-1.565 0-2.855-.484-3.869-1.453-1.06-.969-1.589-2.25-1.589-3.846Zm2.282 0c-.022.877.29 1.729.872 2.385a3.168 3.168 0 0 0 4.594 0 3.64 3.64 0 0 0 0-4.78 3.167 3.167 0 0 0-4.594 0 3.468 3.468 0 0 0-.872 2.395Zm15.66-3.239c-.805 0-1.39.335-1.756 1.005a4.922 4.922 0 0 0-.552 2.386v4.655a.234.234 0 0 1-.268.268h-1.745c-.195 0-.291-.09-.291-.268V20.2a.254.254 0 0 1 .089-.183.304.304 0 0 1 .202-.08h1.653a.304.304 0 0 1 .266.162.254.254 0 0 1 .025.101v.982h.068a3.034 3.034 0 0 1 2.662-1.43 3.752 3.752 0 0 1 2.46.826c.149.12.184.246.112.382l-.643 1.349c-.075.163-.209.183-.402.068a3.539 3.539 0 0 0-1.88-.591Zm6.666 3.262v4.784a.235.235 0 0 1-.067.201.237.237 0 0 1-.201.067h-1.746c-.193 0-.29-.09-.29-.268V20.2a.24.24 0 0 1 .09-.184.3.3 0 0 1 .2-.078h1.654a.304.304 0 0 1 .267.16.254.254 0 0 1 .025.102v.692h.066c.657-.76 1.576-1.14 2.756-1.14a4.009 4.009 0 0 1 2.104.538c.504.292.909.728 1.163 1.252a4.184 4.184 0 0 1 1.343-1.318 3.986 3.986 0 0 1 2.036-.47c1.179 0 2.118.328 2.819.984.7.655 1.058 1.69 1.073 3.105v5.99a.235.235 0 0 1-.067.2.237.237 0 0 1-.201.067h-1.722c-.195 0-.292-.09-.292-.268v-5.41c0-.922-.194-1.622-.581-2.1-.367-.417-.889-.625-1.565-.626-.776 0-1.35.305-1.724.917-.328.537-.492 1.32-.492 2.347v4.872a.235.235 0 0 1-.067.201.237.237 0 0 1-.201.067h-1.722c-.195 0-.292-.09-.292-.268v-5.41c0-.922-.194-1.622-.581-2.1-.367-.417-.889-.625-1.565-.626a1.85 1.85 0 0 0-1.724.983c-.331.565-.496 1.355-.496 2.37Zm19.798-3.553c-.849 0-1.826.298-2.931.894-.209.12-.344.088-.402-.09l-.493-1.117a.27.27 0 0 1 .112-.358c1.103-.715 2.437-1.072 4.004-1.072 1.403 0 2.439.373 3.111 1.118.566.64.849 1.548.849 2.725v6.239a.24.24 0 0 1-.16.258.24.24 0 0 1-.109.01h-1.521a.24.24 0 0 1-.259-.16.234.234 0 0 1-.009-.108v-.268h-.089a5.312 5.312 0 0 1-2.886.76c-.98 0-1.793-.253-2.438-.76a2.777 2.777 0 0 1-1.075-2.303c0-1.207.656-2.08 1.97-2.615.939-.367 2.363-.62 4.271-.76v-.268c0-.7-.134-1.213-.402-1.541-.312-.39-.827-.584-1.543-.584Zm-.066 7.157a3.913 3.913 0 0 0 2.011-.581v-2.621c-2.694.15-4.042.738-4.042 1.765a1.171 1.171 0 0 0 .592 1.061c.438.258.94.386 1.448.369l-.009.007Z"
+                fill="#fff" />
+            </svg>
+          </div>
+          <div class="page-footer__info">
+            <p>Мы&nbsp;находимся по&nbsp;адресу: <br />г. Нижний Новгород, <br />ул. Максима Горького, д.&nbsp;195, п.
+              П4&nbsp;этаж&nbsp;7.</p>
+            <a href="contract.html">Пользовательское соглашение</a>
+          </div>
+        </div>
+        <div class="page-footer__map" id="map">
+          <iframe
+            src="https://yandex.ru/map-widget/v1/?um=constructor%3Ad0c3e268873f4fd4048d11efa1e8b72452cbf36519252ba918b749077392413f&amp;source=constructor"
+            width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+      </div>
+      <div class="page-footer__container">
+        <p>© 2022 ООО «Платформа».</p>
+        <a class="page-footer__link" href="#up">
+          <svg width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+            <path fill-rule="evenodd" clip-rule="evenodd"
+              d="M7.293.293a1 1 0 0 1 1.414 0l6.364 6.364a1 1 0 0 1-1.414 1.414L9 3.414V16H7V3.414L2.343 8.071A1 1 0 0 1 .93 6.657L7.293.293Z" />
+          </svg>
+          <p>Вернуться наверх</p>
+        </a>
+      </div>
+  </footer>
+
+  <div class="modal-window" id="modal">
+    <div class="modal-window__window form form--modal wrapper">
+
+      <div class="form__wrapper form__wrapper--modal wrapper">
+        <svg class="form__svg" width="30" height="30" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30 30">
+          <path d="M0 26.473 28.724 0 30 3.527 1.276 30z"/>
+          <path d="M30 26.473 1.276 0 0 3.527 28.724 30z"/></svg>
+        <h2 class="form__title  form__title--modal">Заявка на разработку</h2>
+        <p class="form__text form__text--modal">Мы&nbsp;создаем технически сильный продукт с&nbsp;низкими эксплуатационными расходами,
+          готовый к&nbsp;доминированию на&nbsp;рынке</p>
+        <form class="form__container" id="modal-form">
+          <div class="form__input-list">
+            <input class="form__input form__input--modal" type="text" name="name" placeholder="Имя" required>
+            <input class="form__input form__input--modal" type="tel" name="phone" placeholder="Телефон" required>
+            <input class="form__input form__input--modal" type="email" name="e-mail" placeholder="Почта" required>
+          </div>
+          <textarea class="form__comment" placeholder="Комментарий"></textarea>
+          <div class="form__upload upload">
+            <input class="upload__input" type="file" name="files" id="upload-input-2" accept=".jpg, .jpeg, .png, .gif, .bmp, .doc, .docx, .xls, .xlsx, .txt, .tar, .zip, .7z, .7zip" multiple>
+            <label class="upload__label" for="upload-input-2">
+              <svg class="upload__icon" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 18">
+                <path
+                  d="M1 5.728V12.2c0 1.273.527 2.494 1.464 3.394C3.402 16.494 4.674 17 6 17a5.108 5.108 0 0 0 3.536-1.406A4.704 4.704 0 0 0 11 12.2v-8c0-.849-.351-1.663-.976-2.263A3.405 3.405 0 0 0 7.667 1c-.884 0-1.732.337-2.357.937A3.136 3.136 0 0 0 4.333 4.2v7.346c0 .21.043.418.127.612s.207.37.361.52c.155.148.339.265.541.346.202.08.42.122.638.122.442 0 .866-.169 1.179-.469.312-.3.488-.707.488-1.131V5.8"
+                  stroke="#000" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              <span class="upload__text">Добавить файл</span>
+            </label>
+          </div>
+          <div class="form__btn">
+            <button class="form__button form__button--modal btn" type="submit">Отправить</button>
+            <a class="form__link form__link--modal" href="pact.html">Отправляя заявку я&nbsp;соглашаюсь на&nbsp;обработку персональной
+              информации
+              на&nbsp;условиях, определенных <span>Политикой конфиденциальности</span></a>
+          </div>
+        </form>
+      </div>
+
+    </div>
+    <div class="modal-window__form"></div>
+    <div class="modal-window__overlay overlay"></div>
+
+  </div>
+
+  <script src="js/main.min.js"></script>
+</body>
+
+</html>

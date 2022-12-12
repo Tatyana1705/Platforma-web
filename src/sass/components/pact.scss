@@ -1,0 +1,79 @@
+.pact {
+    margin-bottom: 57px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 80px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 100px;
+    }
+}
+
+.pact__title {
+    font-size: 20px;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        font-size: 45px;
+        margin-top: 0;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 70px;
+        margin-bottom: 40px;
+    }
+}
+
+.pact__text {
+    font-size: 14px;
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 25px;
+    }
+}
+
+.pact__list {
+    @include list-reset;
+    font-size: 14px;
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 25px;
+    }
+}
+
+.pact__item {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 34px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 46px;
+    }
+}
+
+.pact__adress {
+    font-size: 14px;
+    font-weight: 600;
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 25px;
+    }
+}

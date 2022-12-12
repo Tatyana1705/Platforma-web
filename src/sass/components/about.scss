@@ -1,0 +1,156 @@
+.about {
+    padding-top: 40px;
+    padding-bottom: 40px;
+    background-color: #0860B9;
+
+    @media (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 80px; 
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+}
+
+.about__title {
+    @include title;
+    margin-bottom: 40px;
+    color: #FFFFFF;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 50px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 100px;
+    }
+}
+
+.about__content {
+    @media (min-width: $tablet) {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+.about__gallery {
+    width: 100%;
+    max-width: 1220px;
+    position: relative;
+
+    @media (min-width: $tablet) {
+        width: 50%;
+        margin-right: 20px;
+    }
+
+    @media (min-width: $desktop) {
+        width: 50%;
+        margin-right: 40px;
+    }
+}
+
+.about__item {
+    display: none;
+    animation-name: fade;
+
+    &--fade {
+        -webkit-animation-name: fade;
+        -webkit-animation-duration: 1s;
+        animation-name: fade;
+        animation-duration: 1s;
+    }
+
+    & img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $tablet) {
+        & img {
+            width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+    }
+}
+
+@-webkit-keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+  
+  @keyframes fade {
+    from {opacity: .4}
+    to {opacity: 1}
+  }
+
+.about__buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 0;
+    }
+}
+
+.about__btn {
+    @include button-reset;
+
+    & svg {
+        width: 29px;
+        height: 35px;
+        fill: #B5D9FC;
+        transition: fill 0.3s ease;
+        cursor: pointer;
+    }
+
+    &:hover svg {
+        @media (hover: hover) {
+            fill: #DC9EF2;
+        }
+    }
+
+    &:active svg {
+       fill: #DC9EF2;
+    }
+
+    @media (min-width: $desktop) {
+        & svg {
+            width: 40px;
+            height: 50px;
+        }
+    }
+}
+
+.about__label {
+    margin: 0 30px;
+    color: #B5D9FC;
+
+    @media (min-width: $desktop) {
+        margin: 0 50px;
+        font-size: 25px;
+    }
+}
+
+.about__text {
+
+    & p {
+        margin-top: 0;
+        color: #FFFFFF;
+    }
+
+    @media (min-width: $tablet) {
+        width: 50%;
+    }
+
+    @media (min-width: $desktop) {
+        & p {
+            font-size: 25px;
+        }
+    }
+}

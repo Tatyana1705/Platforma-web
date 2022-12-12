@@ -1,0 +1,88 @@
+.perk {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #0860B9;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 80px;
+        background-color: transparent;
+    }
+}
+
+.perk__container {
+    display: grid;
+    position: relative;
+    grid-template-columns: repeat(2, 50%);
+
+    @media (min-width: $tablet) {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+.perk__item {
+    padding: 22px 29px;
+    text-align: center;
+    font-size: 17px;
+
+    &:nth-child(odd) {
+        border-right: 2px rgba(255, 255, 255, 0.4) solid; 
+    }
+
+    &:nth-child(4n+1),
+    &:nth-child(4n+2) {
+        border-bottom: 2px rgba(255, 255, 255, 0.4) solid; 
+    }
+
+    @media (min-width: $tablet) {
+        padding: 10px 25px;
+
+        &:nth-child(odd) {
+            border-right: none; 
+        }
+
+        &:nth-child(4n+1),
+        &:nth-child(4n+2) {
+            border-bottom: none; 
+        }
+
+        &:nth-last-child(n+2) {
+            border-right: 3px rgba(14, 97, 186, 0.4) solid;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        padding: 30px 25px;
+    }
+}
+
+.perk__item dt {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 30px;
+    font-weight: 600;
+    color: #DC9EF2;
+
+    @media (min-width: $tablet) {
+        font-size: 45px;
+        color: #9D55B8;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 30px;
+        font-size: 80px;
+    }
+}
+
+.perk__item dd {
+    margin: 0;
+    color: #FFFFFF;
+
+    @media (min-width: $tablet) {
+        font-size: 15px;
+        color: #000000;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 30px;
+    }
+}

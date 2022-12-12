@@ -1,0 +1,33 @@
+.presentation {
+    background-color: var(--presentation-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.presentation__title {
+    color: var(--presentation-title-color);
+    margin: 0;
+    margin-bottom: 30px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 60px;
+        font-size: 60px;
+        line-height: 78px
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 80px;
+        font-size: 87px;
+        line-height: 113px;
+    }
+}

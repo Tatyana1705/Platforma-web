@@ -1,0 +1,147 @@
+.advantages {
+    padding-top: 40px;
+    padding-bottom: 20px;
+    background-color: #0860B9;
+
+    @media (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+}
+
+.advantages__title {
+    @include title;
+    position: relative;
+    margin-bottom: 20px;
+    color: #DC9EF2;
+
+    &::after {
+        content: "";
+        position: absolute;
+        display: block;
+        bottom: 0;
+        right: 0;
+        width: 72px;
+        height: 25px;
+        background-image: url("../img/svg_advantages.svg");
+        background-repeat: no-repeat;
+        background-size: 100%;
+    }
+
+    @media (min-width: $tablet) {
+        margin-bottom: 50px;
+        font-size: 45px;
+
+        &::after {
+            width: 158px;
+            height: 55px;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 80px;
+        font-size: 87px;
+
+        &::after {
+            width: 172px;
+            height: 60px;
+        }
+    }
+}
+
+.advantages__title span {
+    color: #FFFFFF;
+}
+
+.advantages__list {
+    @include list-reset;
+    color: #FFFFFF;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.advantages__item {
+    padding: 20px 0;
+
+    &:nth-last-child(n+2) {
+        border-bottom: 3px rgba(251, 253, 255, 0.5) solid;
+    }
+
+    @media (min-width: $tablet) {
+        padding: 10px;
+
+        &:nth-last-child(n+2) {
+            border-bottom: none;
+            border-right: 3px rgba(251, 253, 255, 0.5) solid;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        padding: 36px 30px;
+    }
+}
+
+.advantages__subtitle {
+    position: relative;
+    margin: 0;
+    margin-bottom: 20px;
+    padding-left: 62px;
+    font-size: 18px;
+    font-weight: 400;
+
+    &::before {
+        content: "";
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 42px;
+        height: 42px;
+        background-repeat: no-repeat;
+        background-size: 100%;
+
+    }
+
+    &--job::before {
+        background-image: url("../img/list-check.svg");
+    }
+
+    &--career::before {
+        background-image: url("../img/graph-up.svg");
+    }
+
+    &--pay::before {
+        background-image: url("../img/coin.svg");
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 30px;
+        padding-left: 90px;
+        font-size: 25px;
+
+        &::before {
+            width: 60px;
+            height: 60px;
+        }
+    }
+}
+
+.advantages__text {
+    margin: 0;
+
+    @media (min-width: $tablet) {
+        font-size: 16px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 25px;
+    }
+}

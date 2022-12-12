@@ -1,0 +1,234 @@
+.start {
+    background-image: linear-gradient(var(--first-start-color), var(--last-start-color));
+    position: relative;
+    padding-top: 20px;
+    padding-bottom: 400px;
+    overflow: hidden;
+
+    &--web {
+        padding-bottom: 245px;
+    }
+
+    &--dash {
+        padding-bottom: 30px;
+    }
+
+    &--worker-app {
+        padding-bottom: 30px;
+    }
+
+    &--worker-web {
+        padding-bottom: 30px;
+    }
+
+    @media (min-width: $tablet) {
+        padding-bottom: 121px;
+
+        &--worker-web {
+            padding-bottom: 0;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 22px;
+
+        &--web {
+            padding-bottom: 220px;
+        }
+
+        &--worker-web {
+            padding-bottom: 80px;
+        }
+    }
+
+    & h1 {
+        margin: 0;
+        margin-bottom: 30px;
+        font-weight: 700;
+        font-size: 30px;
+        line-height: 39px;
+        color: #FFFFFF;
+
+        @media (min-width: $tablet) {
+            width: 50%;
+            font-size: 40px;
+            line-height: 52px;
+        }
+
+        @media (min-width: $desktop) {
+            margin-bottom: 80px;
+            font-size: 70px;
+            line-height: 91px;
+        }
+    }
+
+    .start__title {
+
+        &--web {
+            width: 100%;
+        }
+
+        @media (min-width: $desktop) {
+
+            &--web {
+                margin-top: 120px;
+            }
+        }
+    }
+
+    & svg {
+        margin-right: 10px;
+
+        @media (min-width: $tablet) {
+            width: 50px;
+            height: auto;
+            margin-right: 20px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 90px;
+            height: auto;
+            margin-right: 30px;
+        }
+    }
+}
+
+.start__content {
+
+    @media (min-width: $tablet) {
+        display: flex;
+        margin-bottom: 60px;
+    }
+}
+
+
+.start__img {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -280px;
+
+    &--web {
+        width: 100%;
+        height: auto;
+        left: 0;
+        margin: 0;
+    }
+
+    &--dash {
+        display: flex;
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    &--worker-app {
+        display: flex;
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+        
+    }
+
+    &--worker-web {
+        display: flex;
+        position: static;
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    @media (min-width: $tablet) {
+        top: -60px;
+        left: 270px;
+        margin-left: 0;
+        width: 668px;
+        height: 502px;
+
+        &--web {
+            top: -10px;
+            width: 570px;
+            height: auto;
+        }
+
+        &--dash {
+            position: absolute;
+            width: 429px;
+            height: auto;
+            top: 15px;
+            left: 50%;
+        }
+
+        &--worker-app {
+            position: absolute;
+            width: 335px;
+            height: auto;
+            top: 15px;
+            left: 55%;
+        }
+
+        &--worker-web {
+            position: absolute;
+            width: 423px;
+            height: auto;
+            top: 15px;
+            left: 45%;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        top: -100px;
+        left: 40%;
+        width: 1100px;
+        height: 825px;
+
+        &--web {
+            top: 0;
+            height: auto;
+        }
+
+        &--dash {
+            width: 800px;
+            height: auto;
+            top: 0;
+            left: 55%;
+        }
+
+        &--worker-app {
+            width: 500px;
+            height: auto;
+            top: 0;
+            left: 55%;
+        }
+
+        &--worker-web {
+            width: 760px;
+            height: auto;
+            top: 0;
+            left: 45%;
+        }
+    }
+}
+
+.start__text {
+    margin-bottom: 30px;
+
+    & p {
+        margin: 0;
+        color: #FFFFFF;
+    }
+
+    @media (min-width: $tablet) {
+        width: 50%;
+    }
+
+    @media (min-width: $desktop) {
+        width: 40%;
+
+        & p {
+            font-size: 25px;
+        }
+    }
+}

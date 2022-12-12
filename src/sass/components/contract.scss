@@ -1,0 +1,96 @@
+.contract {
+    margin-top: 30px;
+    margin-bottom: 49px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 100px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-top: 0;
+    }
+}
+
+.contract__title {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        font-size: 40px;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 70px;
+        margin-bottom: 40px;
+    }
+}
+
+.contract__paragraph {
+    font-size: 20px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        font-size: 25px;
+        margin-bottom: 30px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 40px;
+        margin-bottom: 40px;
+    }
+}
+
+.contract__text {
+    font-size: 14px;
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 25px;
+    }
+}
+
+.contract__subtitle {
+    font-size: 20px;
+    font-weight: 600;
+
+    @media (min-width: $tablet) {
+        font-size: 25px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 40px;
+    }
+}
+
+.contract__list {
+    @include list-reset;
+    font-size: 14px;
+
+    @media (min-width: $tablet) {
+        font-size: 18px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 25px;
+    }
+}
+
+.contract__item {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 34px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 46px;
+    }
+}

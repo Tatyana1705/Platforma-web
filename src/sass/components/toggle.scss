@@ -1,0 +1,54 @@
+.toggle {
+    @include button-reset;
+    position: absolute;
+    display: block;
+    width: 26px;
+    height: 26px;
+    padding: 0;
+    z-index: 101;
+  
+    &::before,
+    &::after {
+      content: "";
+      transition: transform 0.3s linear, background-color 0.3s linear;
+    }
+  
+    &--open::before,
+    &--open::after {
+      position: absolute;
+      left: 0;
+      width: 26px;
+      height: 2px;
+      background-color: #005FBB;
+      transform: rotate(0);
+    }
+  
+    &--open::before {
+      top: 4px;
+      box-shadow: 0 9px 0 0 #005FBB;
+    }
+  
+    &--open::after {
+      top: 22px;
+      bottom: 0;
+    }
+  
+    &--close::before,
+    &--close::after {
+      position: absolute;
+      top: 13px;
+      right: 0;
+      width: 26px;
+      height: 2px;
+      background-color: #FFFFFF;
+    }
+  
+    &--close::before {
+      transform: rotate(45deg);
+      box-shadow: none;
+    }
+  
+    &--close::after {
+      transform: rotate(-45deg);
+    }
+  }

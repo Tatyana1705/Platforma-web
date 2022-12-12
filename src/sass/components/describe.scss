@@ -1,0 +1,111 @@
+.describe {
+    background-color: var(--describe-color);
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    @media (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 60px
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+}
+
+.describe__list {
+    @include list-reset;
+
+    @media (min-width: $tablet) {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+
+        &--web {
+            grid-template-columns: repeat(2,1fr);
+        }
+    }
+}
+
+.describe__item {
+    margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 0;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+
+    &:nth-last-child(n+2) {
+        border-bottom: 3px solid var(--border-color);
+
+        @media (min-width: $tablet) {
+            border-bottom: none;
+            border-right: 3px solid var(--border-color);
+        }
+    }
+
+    & p {
+        margin: 0;
+        margin-bottom: 20px;
+
+        @media (min-width: $tablet) {
+            margin-bottom: 10px;
+        }
+
+        @media (min-width: $desktop) {
+            margin-bottom: 30px;
+            font-size: 25px;
+            line-height: 32px;
+        }
+    }
+}
+
+.describe__container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+
+    @media (min-width: $desktop) {
+        margin-bottom: 30px;
+    }
+
+    & h3 {
+        margin: 0;
+        font-size: 18px;
+        line-height: 23px;
+        letter-spacing: 0.05em;
+
+        @media (min-width: $desktop) {
+            font-size: 25px;
+            line-height: 32px
+        }
+    }
+
+    .flow__text {
+        @media (min-width: $desktop) {
+            font-size: 25px;
+            line-height: 32px
+        }
+    }
+
+    & svg {
+        color: var(--describe-svg-color);
+        margin-right: 20px;
+
+        @media (min-width: $tablet) {
+            margin-right: 10px;
+        }
+
+        @media (min-width: $desktop) {
+            width: 60px;
+            height: auto;
+            margin-right: 30px;
+        }
+    }
+}

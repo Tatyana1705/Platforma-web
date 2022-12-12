@@ -1,0 +1,126 @@
+.mistake {
+    @media (min-width: $desktop) {
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+}
+
+.mistake__img {
+    display: block;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet) {
+        width: 450px;
+        height: auto;
+        margin: 0 auto;
+        margin-bottom: 65px;
+        z-index: -1;
+    }
+
+    @media (min-width: $desktop) {
+        position: absolute;
+        left: 74%;
+        transform: translateX(-50%);
+        width: 585px;
+        height: auto;
+        margin-bottom: 0;
+    }
+}
+
+.mistake__img img {
+    display: block;
+    min-width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.mistake__content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    @media (min-width: $desktop) {
+        align-items: flex-start; 
+        width: 45%;
+    }
+}
+
+.mistake__title {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 100px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    color: #0860B9;
+
+    & span {
+        font-size: 30px;
+    }
+
+    @media (min-width: $tablet) {
+        margin-bottom: 50px;
+        font-size: 200px; 
+        line-height: 60px;
+
+        & span {
+            font-size: 40px;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 250px;
+        line-height: 80px;
+        text-align: left;
+        margin-top: 50px;
+
+        & span {
+            font-size: 50px;
+        }
+    }
+}
+
+.mistake__text {
+    margin: 0;
+    margin-bottom: 15px;
+    text-align: center;
+
+    @media (min-width: $tablet) {
+        font-size: 25px;
+        margin-bottom: 15px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 37px;
+        text-align: left;
+        margin-bottom: 50px;
+    }
+}
+
+.mistake__paragraph {
+    margin: 0;
+    margin-bottom: 30px;
+    font-size: 15px;
+    text-align: center;
+    color: #CA89D1;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 50px;
+        font-size: 20px;
+    }
+
+    @media (min-width: $desktop) {
+        font-size: 25px;
+        text-align: left;
+    }
+}
+
+.mistake__btn {
+    text-decoration: none;
+
+    @media (min-width: $desktop) {
+        width: 100%;
+    }
+}

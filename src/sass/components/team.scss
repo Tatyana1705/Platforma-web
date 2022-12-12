@@ -1,0 +1,193 @@
+.team {
+    padding-top: 40px;
+    padding-bottom: 40px;
+
+    @media (min-width: $tablet) {
+        padding-top: 60px;
+        padding-bottom: 80px;
+    }
+
+    @media (min-width: $desktop) {
+        padding-top: 100px;
+        padding-bottom: 130px;
+    }
+}
+
+.team__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet){
+        margin-bottom: 60px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 100px;
+    }
+}
+
+.team__title {
+    @include title;
+    color: #9D55B8;
+}
+
+.team__buttons {
+    display: none;
+
+    @media (min-width: $desktop) {
+        display: flex;
+        margin-top: 16px;
+    }
+}
+
+.team__btn {
+    @include button-reset;
+    cursor: pointer;
+
+    &:nth-last-child(n+2) {
+        margin-right: 10px;
+    }
+
+    & svg {
+        transition: fill 0.3s ease; 
+    }
+
+    &:hover svg {
+        @media (hover: hover) {
+            fill: #9D55B8;
+        }
+    }
+
+    &:active svg {
+       fill: #9D55B8;
+    }
+
+    &:disabled {
+        fill: #AAAAAA;
+    }
+
+    @media (min-width: $tablet) {
+
+        & svg {
+            width: 50px;
+            height: 50px;
+        }
+
+        &:nth-last-child(n+2) {
+            margin-right: 30px;
+        }
+    }
+}
+
+.team__wrapper {
+    @media (min-width: $desktop) {
+        @include wrapper-desktop;
+    }
+}
+
+.team__gallery {
+    overflow-y: auto;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+
+    &::-webkit-scrollbar {
+        width: 0;
+    }
+
+    @media (min-width: $desktop) {
+        position: relative;
+        overflow-x: hidden;
+        height: 375px;
+    }
+}
+
+.team__block {
+    display: flex;
+    width: 100%;
+
+    @media (min-width: $desktop) {
+        position: absolute;
+        width: auto;
+        transition: left 0.5s ease;
+    }
+}
+
+.team__content {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 85%;
+    margin-left: 18px;
+    padding-bottom: 20px;
+    border-bottom: 5px solid;
+    border-image-source: linear-gradient(90.33deg, #0199FF -2.56%, rgba(255, 255, 255, 0) 99.73%);
+    border-image-slice: 1;
+    border-left: 0px;
+    border-right: 0px;
+    border-top: 0px;
+
+    & img {
+        width: 100%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+
+    @media (min-width: $tablet) {
+        width: calc(50% - 48px);
+        margin-left: 20px;
+
+        &:first-child {
+            margin-left: 38px;
+        }
+    }
+
+    @media (min-width: $desktop) {
+        width: 400px;
+        margin-left: 0;
+        padding: 0 10px 30px 10px;
+
+        & img {
+            margin-bottom: 30px;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+    }
+
+}
+
+.team__text {
+    margin: 0;
+    margin-bottom: 10px;
+    font-size: 15px;
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+
+.team__soft {
+    margin: 0;
+    font-size: 15px;
+    color: #029AFF;
+
+    @media (min-width: $desktop) {
+        font-size: 18px;
+    }
+}
+
+.team__end {
+    flex-shrink: 0;
+    width: 1px;
+    margin-left: 18px;
+
+    @media (min-width: $tablet) {
+        margin-left: 38px;
+    }
+
+    @media (min-width: $desktop) {
+        display: none;
+    }
+}

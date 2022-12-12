@@ -1,0 +1,58 @@
+.upload {
+    align-self: flex-end;
+    margin-bottom: 40px;
+
+    @media (min-width: $tablet) {
+        margin-bottom: 78px;
+    }
+
+    @media (min-width: $desktop) {
+        margin-bottom: 48px;
+    }
+}
+
+.upload__input  {
+    position: absolute;
+    overflow: hidden;
+    width: 0;
+    height: 0;
+    z-index: -1;
+}
+
+.upload__label .upload__text,
+.upload__label .upload__icon {
+    transition: 0.3s ease;
+}
+
+.upload__label {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+
+    &:hover .upload__text {
+        @media (hover: hover) {
+            color: #0860B9;
+        }
+    }
+
+    &:hover .upload__icon path {
+        @media (hover: hover) {
+            stroke: #0860B9;
+        }
+    }
+
+    &:active .upload__text {
+       color: #9D55B8;
+    }
+
+    &:active .upload__icon path {
+        stroke: #9D55B8;
+    }
+}
+
+.upload__icon {
+    width: 12px;
+    height: 18px;
+    margin-right: 12px;
+}
